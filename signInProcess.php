@@ -12,7 +12,7 @@ if(empty($email)){
     echo ("Please Enter Your Password.");
 }else{
 
-    $rs = Database::search("SELECT * FROM `customer` WHERE `email`='".$email."' AND `password`='".$password."'");
+    $rs = Database::search("SELECT * FROM `customer` WHERE `cus_email`='".$email."' AND `cus_password`='".$password."'");
     $n = $rs->num_rows;
 
     if($n == 1){
@@ -22,7 +22,7 @@ if(empty($email)){
         $d->setTimezone($tz);
         $date = $d->format("Y-m-d H:i:s");
 
-       Database::iud("UPDATE `customer` SET `last_login`='".$date."' WHERE `email`='".$email."'");
+       Database::iud("UPDATE `customer` SET `cus_last_login`='".$date."' WHERE `cus_email`='".$email."'");
 
         echo ("success");
         $d = $rs->fetch_assoc();

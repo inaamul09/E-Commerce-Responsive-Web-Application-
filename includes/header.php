@@ -49,7 +49,7 @@
                         <span class="me-3" onclick="myAccount();">My Account</span>
                         <div class="vr me-2"></div>
 
-                        <span class="me-2">Hi, <?php echo $data["fname"]; ?></span>
+                        <span class="me-2">Hi, <?php echo $data["cus_lname"]; ?></span>
                         <img src="assets/icons/SignIn.svg" alt="SignOut" class="header-icon me-2">
                         <span class="me-2" onclick="signOut();">SignOut</span>
                     <?php } else { ?>
@@ -65,7 +65,7 @@
                 <?php if (isset($_SESSION["u"])) {
                     $data = $_SESSION["u"]; ?>
                     <div class="d-flex align-items-center justify-content-center">
-                        <span class="me-2">Hi, <?php echo $data["fname"]; ?></span>
+                        <span class="me-2">Hi, <?php echo $data["cus_lname"]; ?></span>
                         <img src="assets/icons/SignIn.svg" alt="SignOut" class="header-icon me-2">
                         <span onclick="signOut();">SignOut</span>
                     </div>

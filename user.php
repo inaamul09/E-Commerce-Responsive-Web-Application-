@@ -57,7 +57,7 @@ session_start();
                 <!-- Breadcrumb -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/index.php">Home</a></li>
                         <li class="breadcrumb-item"><a href="user.php">Profile</a></li>
                   
                     </ol>
